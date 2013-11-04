@@ -1,0 +1,110 @@
+html {
+	font: 100%/1.5 georgia;
+	background: white;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+#theText {
+	position: relative;
+	margin: 5em auto;
+	padding: 0;
+	width: 31.5em;
+}
+#theText p,
+#miniImage p {
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+#theLetters {
+	
+	position: absolute;
+}
+
+#output {
+	position: absolute;
+	right: .5em;
+	top: 2em;
+	font-size: .75em;
+}
+#output strong {
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+#getWidth {
+	text-align: center;
+	border-bottom: 1px solid red;
+	margin: 0 0 2em
+}
+#getWidth:after {
+	content: '';
+	width: 1px;
+	height: 16px;
+	border-right: 1px solid red;
+	position: absolute;
+	right: 0;
+	top: 1.5em;
+}
+#getWidth:before {
+	content: '';
+	width: 1px;
+	height: 16px;
+	border-left: 1px solid red;
+	position: absolute;
+	left: 0;
+	top: 1.5em;
+}
+
+#range {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	top: 1em;
+}
+#range input {
+	width: 150px;
+}
+#range input[style] {
+	position: absolute;
+	margin-left: -75px;
+}
+
+#settings {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+}
+#settings select {
+	display: block;
+}
+#otherLanguages {
+	display: none;
+}
+
+#miniImage {
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+#miniImage > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	-webkit-transform: scale(.25);
+	   -moz-transform: scale(.25);
+	    -ms-transform: scale(.25);
+	     -o-transform: scale(.25);
+	        transform: scale(.25);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
